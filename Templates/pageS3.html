@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+
+<style>
+body {
+  background-image: url("/cloudpic/clouds.jpg");
+}
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+h1 {font-size: 40px;}
+p {font-size: 30px;}
+
+h1 {text-align: center;}
+p {text-align: center;}
+
+
+
+
+</style>
+
+
+
+<header>
+    <h1>SARIMA Vs Seasonal Vector Autoregressive Models for Forecasting Daily Weather Conditions</h1>
+    <p>This Dashboard Self Updates Every Week</p> 
+    <p><a style="color:blue;" href="https://github.com/djthorne333/AWS-Cloud-Computing-Full-Stack-Time-Series-Weather-Forecasting-Dashboard">See how it was made on my GitHub, click here!</a></p> 
+</header>
+
+
+
+
+
+<header>
+    <h1>Temperature Forecasts for This Week</h1>
+</header>
+
+
+
+<div class="row">
+
+  <div class="column">
+    <img id="SarimaPredsTable" src="https://weatherplots.s3.amazonaws.com/SarimaPredsTable.png" alt="fig" style="width:100%"/>
+  </div>
+
+  <div class="column">
+    <img id="VarPredsTable" src="https://weatherplots.s3.amazonaws.com/VarPredsTable.png" alt="fig2"  style="width:100%"/>
+  </div>
+
+</div>
+
+
+
+<script>
+    // Create a timestamp
+    var timestamp = new Date().getTime();
+    // Get the image element 
+    var image = document.getElementById("SarimaPredsTable");
+    // Adding the timestamp parameter to image src
+    image.src = "https://weatherplots.s3.amazonaws.com/SarimaPredsTable.png?t=" + timestamp;
+    console.log(image.src);
+</script>
+
+
+<script>
+    var timestamp = new Date().getTime();
+    var image = document.getElementById("VarPredsTable");
+    image.src = "https://weatherplots.s3.amazonaws.com/VarPredsTable.png?t=" + timestamp;
+    console.log(image.src);
+</script>
+
+
+
+<header>
+    <h1>Temperature Forecasts and Performance of Last Week</h1>
+</header>
+
+
+
+
+
+
+<div class="row">
+
+  <div class="column">
+    <img id="SarimaTempVal" src="https://weatherplots.s3.amazonaws.com/SarimaTempVal.png" alt="fig3" style="width:100%" class="center"/>
+  </div>
+
+  <div class="column">
+    <img id="VarTempVal" src="https://weatherplots.s3.amazonaws.com/VarTempVal.png" alt="fig4" style="width:100%" class="center"/>
+  </div>
+
+</div>
+
+
+<script>
+    var timestamp = new Date().getTime();
+    var image = document.getElementById("SarimaTempVal");
+    image.src = "https://weatherplots.s3.amazonaws.com/SarimaTempVal.png?t=" + timestamp;
+    console.log(image.src);
+</script>
+
+
+<script>
+    var timestamp = new Date().getTime();
+    var image = document.getElementById("VarTempVal");
+    image.src = "https://weatherplots.s3.amazonaws.com/VarTempVal.png?t=" + timestamp;
+    console.log(image.src);
+</script>
+
+
+
+<header>
+    <h1>Forecast for other Variables Influencing Temperature this Week in SVAR Model</h1>
+</header>
+
+
+
+<img id="VarPredPHW" src="https://weatherplots.s3.amazonaws.com/VarPredPHW.png" alt="fig5" style="width:75%" class="center"/>
+
+
+<script>
+    var timestamp = new Date().getTime();
+    var image = document.getElementById("VarPredPHW");
+    image.src = "https://weatherplots.s3.amazonaws.com/VarPredPHW.png?t=" + timestamp;
+    console.log(image.src);
+</script>
+
+
+<header>
+    <h1>Forecast for other Variables Last Week and Their Performance</h1>
+</header>
+
+
+
+
+<img id="VarValPHW" src="https://weatherplots.s3.amazonaws.com/VarValPHW.png" alt="fig6" style="width:75%" class="center"/>
+
+
+
+<script>
+    var timestamp = new Date().getTime();
+    var image = document.getElementById("VarValPHW");
+    image.src = "https://weatherplots.s3.amazonaws.com/VarValPHW.png?t=" + timestamp;
+    console.log(image.src);
+</script>
+
+
+
+
+
+</html>
