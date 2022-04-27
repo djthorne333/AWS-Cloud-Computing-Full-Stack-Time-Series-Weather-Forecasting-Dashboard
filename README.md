@@ -1,6 +1,11 @@
 ### --AWS-Cloud-Computing-Full-Stack-Time-Series-Weather-Forecasting-Dashboard--
 ##  Website link: http://3.227.234.200:8080/
 
+# Please view notebooks with nbviewer, github likes to cut things out:
+
+## App development notebook: https://nbviewer.org/github/djthorne333/AWS-Cloud-Computing-Full-Stack-Time-Series-Weather-Forecasting-Dashboard/blob/main/Weather%20Time%20Series%20App%20NB.ipynb
+
+## Containerized script that trains models and generates plots: https://nbviewer.org/github/djthorne333/AWS-Cloud-Computing-Full-Stack-Time-Series-Weather-Forecasting-Dashboard/blob/main/Weather%20Docker%20Script%20NB.ipynb
 
 # SARIMA Vs Seasonal VAR for Weather Forecasting Dashboard in AWS
 A full stack SARIMA/SVAR weather forecasting application done entirely within AWS cloud computing architecture (EC2, RDS, S3) using Boto3, and PyMySQL.  I compare SARIMA and Seasonal VAR time series models as weather forecasters and host predictions and performance on a weather dashboard website
