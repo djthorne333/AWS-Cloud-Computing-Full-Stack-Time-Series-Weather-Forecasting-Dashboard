@@ -58,7 +58,7 @@ A full stack SARIMA/SVAR weather forecasting application done entirely within AW
 ## Results:
 * SARIMA Average RMSE (Kelvin) : 5.897
 * VAR Average RMSE (Kelvin) : 5.607
-* KNN f1 score fore rain classification: 0.62
+* KNN f1 score for rain classification: 0.62
 * It was not possible to use forecasted data is input to another model forecast rain likelihood with any desirable f1 score.
 
 
