@@ -64,7 +64,7 @@ A full stack SARIMA/SVAR weather forecasting application done entirely within AW
 
 
 ## Website:
-* Come check out the website: http://3.227.234.200:8080/   
+* Come check out the website: http://3.236.77.132:8080/ 
 
 ## Files
 * Within the GitHub Repo you will find A notebook for the development process of the whole project, another notebook used to showcase the containerized script that does the heavy lifting for the app, a .py file for the flask script, a  .py file for the script that updates RDS with current weather conditions every hour, and folders for templates and backgrounds. There is also a folder with the Dockerfile and requirements.txt.
